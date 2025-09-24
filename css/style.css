@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bree+Serif&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+body{
+    font-size: 1.3em;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body,html{
+    overflow: hidden;
+    overflow: scroll;
+    
+}
+.cabeçalho{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+  
+
+}
+.cabeçalho div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 19px;
+   
+    
+}
+.cabeçalho img{
+    max-width: 100%;
+    width: 180px;
+    align-self: center;
+    margin: 10px 15px;
+    margin-top: -5%;
+    margin-bottom: -4%;
+   
+}
+.cabeçalho section{
+    font-size: 1.2em;
+        margin: 5px 10px;
+}
+.container-seções{
+
+    font-size: 1.1em;  
+}
+.container-seções li{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:5%;
+
+}
+.container-seções a{
+    text-decoration: none;
+    color: red;
+    transition-property: all;
+    transition: color 1s ease-in-out;
+}
+.container-seções a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: aqua;
+    transition: width 1s ease-in-out;
+}
+.container-seções a:hover{
+    color: aqua;
+}
+.container-seções a:hover::after{
+    width: 100%;
+
+  
+}
+.conteudo-principal{
+    font-size: 1.1em;
+}
+.conteudo-principal section{
+    display: flex;
+    justify-content: center;
+    gap:3%;
+    flex-wrap:wrap;
+    flex: 1 1 200px;
+
+    text-align: center;
+}
+.conteudo-principal h3{
+    width: 100%;
+    text-align:start ;
+    margin-left: 4%;
+    margin-bottom: 1.5%;
+    font-size: 1.3em;
+    text-decoration: underline red;
+   
+}
+.conteudo-principal img{
+    border-radius: 16px;
+    max-width: 100%;
+    width: 8em;
+}
+.conteudo-principal div{
+    width: 200px;
+    transition-property: all;
+    transition:transform 0,5s ease-in-out;
+   
+}
+.conteudo-principal div:hover{
+    transform: scale(1.1);
+}
+.container-escondido{
+    transition-property: all;
+    transition: color 0,4s ease-in-out;
+}
+.container-escondido:hover{
+    color: aqua;
+}
+.seção-descrição{
+    display: flex;
+
+}
