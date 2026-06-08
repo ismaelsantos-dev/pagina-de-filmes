@@ -1,111 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>mania de cine</title>
+     <title>Mania de Cine</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+   
 </head>
-<body>
-    <header class="cabeçalho">
-        <div>
-            <img src="img/cinema_2141550.png" alt="logo de um tiquete representando o nome cinema">
-            <section>
-                <p>todos os fimes e seriés a um clique de distância</p>
-            </section>
-            <div class="container-seções">
-                <ul>
-                    <li>
-                    <a href="#">terror</a>
-                    <a href="#">comédia</a>
-                    <a href="#">drama</a>
-                    <a href="#">suspense</a>
-                    </li>
-                </ul>
-            </div>
+<body class="p-3 mb-2 bg-black text-white">
+    <header class="d-flex p-2  align-items-center  d-flex flex-wrap d-flex justify-content-evenly">
+        <div class="d-flex p-2 d-flex align-items-center  ">
+         <img class="img-fluid" style="max-width: 120px;" src="img/cinema_2141550.png" alt="logo cinema">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+
+        <a class="navbar-brand text-danger fw-bold fs-4" href="#">🍿 Mania de Cine</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuManiaDeCine">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuManiaDeCine">
+            
+            <ul class="d-flex flex-column flex-lg-row gap-3 gap-lg-5 list-unstyled mx-3 text-light my-3 my-lg-0">
+                <li>Home</li>
+                <li>Listas</li>
+                <li>Populares</li>
+                <li>Lançamentos</li>
+            </ul>
+
+            <form class="ms-auto my-2 my-lg-0" style="max-width: 320px; width: 100%;">
+                <div class="input-group">
+                    <input type="search" class="form-control bg-dark text-light border-secondary" placeholder="Buscar filme...">
+                    <button class="btn btn-danger" type="submit">Buscar</button>
+                </div>
+            </form>
+            
         </div>
+
+    </div>
+</nav>
     </header>
-    <main class="conteudo-principal">
-       <section>
-        <h3>mais queridos</h3>
-        <div>
-            <img src="img/a longa marcha.webp" alt="capa do filme a longa marcha">
-            <div class="container-escondido">
-                <p>A LONGA MARCHA</p>
-                <span>⭐⭐⭐⭐⭐</span>
-            </div>
+    <main>
+    <section class="my-5"> 
+        <h3 class="text-light border-end border-danger border-4 pe-3 fw-bold d-inline-block mb-4">
+        Mais vistos
+    </h3>
+
+    <div class="d-flex justify-content-center flex-wrap gap-4">
+        
+        <div class="d-flex justify-content-center flex-wrap gap-4" style="width: 160px;">
+            <img src="img/alien.webp" class="img-fluid " alt="imagem da capa do filme alien">
+            <img  src="img/anaconda.webp" class="img-fluid " alt="capa do filme Anaconda">
         </div>
-        <div>
-            <img src="img/alien.webp" alt="capa do filme alien earth">
-            <div class="container-escondido">
-                <p>ALIEN EARTH</p>
-                <SPAN>⭐⭐⭐⭐⭐</SPAN>
-            </div>
+        
+        <div class="d-flex justify-content-center flex-wrap gap-4" style="width: 160px;">
+            <img  src="img/corre que a policia vem ai.webp" class="img-fluid " alt="capa do filme corre que a policia vem ai">
+            <img src="img/forrest gump o contador de historias.webp" class="img-fluid " alt="capa do filme Forrest gump o contador de historias">
         </div>
-        <div>
-            <img src="img/corre que a policia vem ai.webp" alt="capa do filme corre que a polícia vem ai">
-            <div class="container-escondido">
-                <p>CORRE QUE A POLÍCIA VEM AI</p>
-              <span> ⭐⭐⭐⭐⭐</span>
-            </div>
+        
+        <div class="d-flex justify-content-center flex-wrap gap-4" style="width: 160px;">
+            <img src="img/interestelar.webp" class="img-fluid " alt="capa do filme interestelar">
+            <img src="img/eu sei oque vocês fizeram no verão passadowebp" class="img-fluid " alt="capa do filme eu sei oque vocês fizeram no verão passado">
         </div>
-        <div>
-            <img src="img/interestelar.webp" alt="capa do filme interestelar">
-            <div class="container-escondido">
-                <p>INTERESTELAR</p>
-                <span>⭐⭐⭐⭐⭐ </span>
-            </div>
+        <div class="d-flex justify-content-center flex-wrap gap-4" style="width: 160px;">
+            <img src="img/ilha do medo.webp" class="img-fluid " alt="capa do filme ilha do medo">
+            <img src="img/lei e ordem.webp" class="img-fluid " alt="capa do filme lei e ordem">
         </div>
-        <div>
-            <img src="img/wandinha.webp" alt="capa do filme wandinha">
-            <div class="container-escondido">
-                <p>WANDINHA</p>
-                <span>⭐⭐⭐⭐⭐</span>
-            </div>
+         <div class="d-flex justify-content-center flex-wrap gap-4">
+            <img src="img/mickei.jpeg" class="img-fluid " alt="capa do filme mickei" width="230px">
+            <img src="img/avengers.jpeg" class="img-fluid " alt="capa do filme Avengers" style="width:240px" ;>
         </div>
 
-       </section>
-       <section>
-        <h3>Grátis para assistir</h3>
-        <div>
-            <img src="img/forrest gump o contador de historias.webp" alt="capa do filme forrest gump o contador de historias">
-            <div class="container-escondido">
-                <p>FORREST GUMP </p>
-                 
-            </div>
-        </div>
-        <div>
-            <img src="img/o poderoso chefão parte II.webp" alt="capa do filme o poderoso chefão">
-        <div class="container-escondido">
-            <p> O PODEROSO CHEFÃO</p>
-        </div>
-        </div>
-        <div>
-            <img src="img/anaconda.webp" alt="capa do filme anaconda">
-            <div class="container-escondido">
-                <p>ANACONDA</p>
-            </div>
-        </div>
-       <div>
-        <img src="img/os infiltrados.webp" alt="capa do filme o infiltrado">
-        <div class="container-escondido">
-            <p>O INFILTRADO</p>
-        </div>
-       </div>
-       <div>
-         <img src="img/o show de trumam : o show da vida.webp" alt="capa do filme o show de truman: o show da vida">
-         <div class="container-escondido">
-            <p>O SHOW DE TRUMAN</p>
-         </div>
-       </div>
-       </section>
-       <section class="seção-descrição">
-        <h3>junte-se a nós</h3>
-        <span class="descrição">
-            <p>onde a magia do cinema ganha vida.encontre a sua próxima grande história</p>
-        </span>
-       </section>
+    </div>
 
+</section>
+
+        <section class="my-5">
+            <h3 class="text-light border-end border-danger border-4 pe-3 fw-bold d-inline-block mb-4">Recomendados</h3>
+            <div class="d-flex justify-content-center flex-wrap gap-4">
+            <div class="d-flex justify-content-center flex-wrap gap-4" style="width: 160px;">
+                <img src="img/o poderoso chefão parte II.webp" class="img-fluid " alt="capa do filme O poderoso chefão">
+                <img src="img/o resgate do soldado ryan.webp" class="img-fluid " alt="capa dp folme O resgate do soldado ryan">
+            </div>
+            <div class="d-flex justify-content-center flex-wrap gap-4" style="width: 160px;">
+                <img src="img/o show de trumam : o show da vida.webp" class="img-fluid " alt="capa do filme O show de trumam O show da vida">
+                <img src="img/os infiltrados.webp" class="img-fluid " alt="capa do filme Os infiltrados">
+            </div>
+            <div  class="d-flex justify-content-center flex-wrap gap-4" style="width: 160px;">
+                <img src="img/wandinha.webp" class="img-fluid " alt="capa do filme Wandinha">
+                <img src="img/missão resgate vingança.webp" class="img-fluid " alt="capa do filme missão resgate vingança">
+            </div>
+              <div  class="d-flex justify-content-center flex-wrap gap-4" style="width: 160px;">
+                <img src="img/mario bros movie.jpeg" class="img-fluid " alt="capa do filme Mario bros movie">
+                <img src="img/toy story 5.jpeg" class="img-fluid " alt="capa do filme toy story 5">
+            </div>
+             <div  class="d-flex justify-content-center flex-wrap gap-4" >
+                <img src="img/mandalorian.jpeg" class="img-fluid " alt="capa do filme  Mandalorian" style="width: 240px;" >
+                <img src="img/superman.jpeg" class="img-fluid " alt="capa do filme superman" style="width: 230px;">
+            </div>
+            </div>
+        </section>
+        <section >
+      <p class="text-center fs-5 text-light" ">"Mais de 10.00 cinéfilos já estão transformando sua forma de ver filmes. Junte-se à nossa comunidade e encontre sua próxima grande história!"</p>
+        </section>
+        <section class="d-flex justify-content-center flex-wrap ">
+            <div>
+                <img src="img/Ellipse 8.png" alt="avatar representanto do usuario sofia" style="max-width: 100%; width: 140px;">
+                <img src="img/avatar joão.png" alt="avatar representanto do usuario João" style="max-width: 100%; width: 140px;">
+            </div>
+            <div>
+                <img src="img/avatar bia.png" alt="avatar representanto do usuario Bia" style="max-width: 100%; width: 140px;">
+                <img src="img/Ellipse 8.png" alt="Avatar do usuario Sofia" style="max-width: 100%; width: 140px;">
+            </div>
+            <div>
+                <img src="img/avatar carlos.png" alt="Avatar do usuario Carlos" style="max-width: 100%; width: 140px;">
+                 <img src="img/avatar carlos.png" alt="Avatar do usuario Carlos" style="max-width: 100%; width: 140px;">
+                 </div>
+            <p class="align-self-center mx-3 fs-3 text-danger mt-2">+ 9.994 usuarios</p>
+        </section>
+
+        <div class="mx-auto text-center mt-5 border border-danger rounded-4 "h-auto d-inline-block p-4" style="max-width:100%; width: 40rem;">
+              <p class="text-danger my-3 mx-3">cadastre-se agora e curta um bom filme em familia</p>
+            <div class="d-flex gap-3 mx-3">
+            <label for="email">Email</label>
+                <input style="border: none ; border-radius: 5%; cursor: pointer; margin-bottom: 3%;"class="form-control" type="email" id="email" required>
+                </div>
+                <div class="d-flex gap-3 mx-3">
+                    <label for="password">Senha</label>
+                <input style="border: none ; border-radius: 5%; cursor: pointer; margin-bottom: 3%;" class="form-control width 50%" type="password" id="senha" required>
+                </div>
+                <button class="btn btn-danger mx-auto mb-2"> cadastre-se</button>
+           
+            
+        </div>
     </main>
     
 </body>
